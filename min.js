@@ -3,6 +3,8 @@ var utm_source = conf.utm_source || 'okbay';
 var utm_campaign = conf.utm_campaign || 'okbay';
 
 const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+console.log("Detected timezone:", userTimeZone);
+
 if (userTimeZone === 'Asia/Ho_Chi_Minh' || userTimeZone === 'Asia/Saigon') {
   if (window.AndroidOrientation && AndroidOrientation.lockLandscape) {
     AndroidOrientation.lockLandscape();
